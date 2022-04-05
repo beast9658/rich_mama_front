@@ -15,6 +15,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   background-color: #000;
+  min-width: 800px;
 }
 body {
   margin: 0;

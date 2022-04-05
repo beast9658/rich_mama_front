@@ -20,10 +20,10 @@ export default {
   color: #fff;
 }
 .icon div,.icon div img{
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1rem;
+  height: 1rem;
 }
 .icon div {
-  margin: 5px;
+  margin: 10px;
 }
 </style>

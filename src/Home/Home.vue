@@ -4,7 +4,7 @@
     <div class="top-nav">
       <a href="#story"><div>STORY</div></a>
       <a href="#mint"><div>MINT</div></a>
-      <div>IMAGE</div>
+      <div class="top-nav-image">IMAGE</div>
       <a href="#roadmap"><div>ROADMAP</div></a>
       <a href="#team"><div>TEAM</div></a>
     </div>
@@ -91,6 +91,8 @@ export default {
 .home {
   color: #fff;
   padding: 0 3rem;
+  /* max-width: 1920px;
+  margin: auto; */
 }
 .icon-top {
   display: flex;
@@ -107,6 +109,9 @@ export default {
 .top-nav div {
   font-weight: 900;
   color: #fff;
+}
+.top-nav-image {
+  width: 300px;
 }
 .banner {
   margin: 2rem;
@@ -167,5 +172,50 @@ export default {
   display: flex;
   justify-content: space-between;
   margin: 2rem;
+}
+@media screen and (max-width: 1600px) {
+  .story-word {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: auto;
+}
+  .story-image {
+  display: grid;
+  grid-template-columns: 10rem;
+  grid-template-rows: 10rem 10rem 10rem 10rem;
+  place-items: center;
+}
+.story-image img {
+  width: 8rem;
+  height: 8rem;
+}
+.middle-image {
+  width: 60rem;
+  display: grid;
+  grid-template-columns: 20rem 20rem;
+  grid-template-rows: 20rem 20rem;
+  place-items: center;
+  margin: auto;
+}
+.middle-image img {
+  width: 18rem;
+  height: 18rem;
+  margin: auto;
+}
+}
+@media screen and (max-width: 1050px) {
+.middle-image {
+  width: 40rem;
+  display: grid;
+  grid-template-columns: 10rem 10rem;
+  grid-template-rows: 10rem 10rem;
+  place-items: center;
+  text-align: center;
+}
+.middle-image img {
+  width: 8rem;
+  height: 8rem;
+  margin: auto;
+}
 }
 </style>
